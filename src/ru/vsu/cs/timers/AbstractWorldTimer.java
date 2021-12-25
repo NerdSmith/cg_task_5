@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public abstract class AbstractWorldTimer implements WorldTimer {
+public abstract class AbstractWorldTimer implements WorldTimerBase {
     protected World actualWorld;
     private final Timer timer;
 

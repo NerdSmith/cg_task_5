@@ -2,10 +2,18 @@ package ru.vsu.cs.timers;
 
 import ru.vsu.cs.model.World;
 
-public interface WorldTimer {
-    void start();
+public class WorldTimer extends AbstractWorldTimer {
+    public WorldTimer(World world, int period) {
+        super(world, period);
+    }
 
-    void stop();
+    @Override
+    void worldAction(World w) {
+        actualWorld.update();
+    }
 
-    void setPeriod(int delay);
+    @Override
+    public void start() {
+        super.start();
+    }
 }

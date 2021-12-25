@@ -7,7 +7,7 @@ public class MainWindow extends JFrame {
 
     MainWindow() {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setBounds(100, 100, 1280, 760);
+        this.setBounds(100, 100, 1520, 940);
 
         this.drawPanel = new DrawPanel();
 
