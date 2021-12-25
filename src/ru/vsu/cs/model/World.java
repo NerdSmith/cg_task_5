@@ -70,10 +70,16 @@ public class World {
 
 //                int screenChunkSizeX =
 
-                Color oldC = gr2d.getColor();
-                gr2d.setColor(ColorPalette.colorPalette[fireIntensity]);
-                gr2d.fillRect(column * screenChunkSizeX, row * screenChunkSizeY, screenChunkSizeX, screenChunkSizeY);
-                gr2d.setColor(oldC);
+//                Color oldC = gr2d.getColor();
+//                gr2d.setColor(ColorPalette.colorPalette[fireIntensity]);
+                int finalColumn = column;
+                int finalRow = row;
+                DrawUtils.drawWithColor(gr2d, ColorPalette.colorPalette[fireIntensity], () -> {
+                    gr2d.fillRect(finalColumn * screenChunkSizeX, finalRow * screenChunkSizeY, screenChunkSizeX, screenChunkSizeY);
+                });
+
+
+//                gr2d.setColor(oldC);
 //                });
 
             }

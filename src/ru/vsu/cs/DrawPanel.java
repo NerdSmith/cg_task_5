@@ -18,11 +18,8 @@ public class DrawPanel extends JPanel {
 
     public DrawPanel() {
         super();
-//        Field f = new Field(
-//                new Rectangle(0, 10, 10, 10));
         Bonfire bonfire = new Bonfire(500, 300);
         world = new World(bonfire);
-//        screenConverter = new ScreenConverter(f.getRectangle(), 450, 450);
         screenConverter = new ScreenConverter(
                 0,
                 0,
