@@ -46,4 +46,15 @@ public class DrawPanel extends JPanel {
         g.drawImage(bi, 0, 0, null);
     }
 
+    public void restartBonfire() {
+        this.world.restartBonfire();
+    }
+
+    public void setDecayRate(float fireRate) {
+        this.world.setBonfireDecayRate(fireRate);
+    }
+
+    public void setKeepFireRate(float keepFireRate) {
+        this.world.setBonfireKeepFireRate(keepFireRate);
+    }
 }
